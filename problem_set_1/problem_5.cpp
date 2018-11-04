@@ -19,7 +19,7 @@ main()
 	int n;
 	cin >> n;
 
-	for (int i = 2018; i <= INT_MAX; i++)
+	for (int i = 2019; i <= INT_MAX; i++)
 	{
 		int sum = get_digits_sum(i);
 		if (n % sum == 0)
