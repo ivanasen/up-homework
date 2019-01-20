@@ -56,9 +56,16 @@ int main()
 	unsigned int numbers1[] = {0, 11, 22, 3, 444, 55, 6666, 7, 8, 99, 101010, 1111};
 	unsigned int numbers2[] = {0, 2};
 	unsigned int numbers3[] = {0, 11, 22, 3, 444, 55, 6666, 7, 8, 99, 10101};
+	unsigned int numbers4[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	unsigned int numbers5[] = {};
+	unsigned int numbers6[] = {0, 111, 2, 333333, 44, 5555, 66, 77, 8, 9, 101010, 1111, 12212, 1313, 1414, 15151515, 1616};
 
 	std::cout << allRepeatedNumbers(numbers1, 12);
 	std::cout << allRepeatedNumbers(numbers2, 12);
 	std::cout << allRepeatedNumbers(numbers3, 12);
+	std::cout << allRepeatedNumbers(numbers4, 11);
+	std::cout << allRepeatedNumbers(numbers5, 0);
+	std::cout << allRepeatedNumbers(numbers6, 17);
+
 	return 0;
 }

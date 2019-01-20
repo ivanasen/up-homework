@@ -79,5 +79,47 @@ int main()
 	};
 	std::cout << countWords(words1, 4, grid1, 7, 6) << '\n';
 
+	char words2[50][101] = {"good", "time", "win", "lose"};
+    char grid2[100][100] = {
+        {'a', 't', 'c', 'g', 'b'},
+        {'a', 't', 't', 'o', 'l'},
+        {'w', 't', 'i', 'g', 'o'},
+        {'w', 't', 'm', 'o', 's'},
+        {'i', 't', 'e', 'o', 'b'},
+        {'n', 't', 'e', 'd', 'b'}
+ 
+    };
+    std::cout << (countWords(words2, 4, grid2, 6, 5) == 3);
+
+	char words3[50][101] = {"knife", "luck", "universe", "paper"};
+    char grid3[100][100] = {
+        {'s', 'p', 'q', 'p', 'b', 'x', 'b', 's', 'm', 't'},
+        {'i', 'k', 'z', 'q', 'm', 'g', 'i', 'g', 'f', 'f'},
+        {'e', 't', 'u', 'v', 'i', 'e', 'p', 'u', 'e', 'm'},
+        {'h', 'm', 'l', 'k', 's', 'g', 'a', 'w', 'e', 'a'},
+        {'c', 'a', 'l', 'u', 'q', 'u', 'p', 'c', 'b', 'l'},
+        {'e', 'j', 'u', 'n', 'i', 'v', 'e', 'r', 's', 'e'},
+        {'t', 'v', 'c', 'u', 'j', 'z', 'r', 'm', 's', 'n'},
+        {'n', 'm', 'k', 'n', 'i', 'f', 'e', 'c', 'a', 'b'},
+        {'e', 'f', 'y', 'e', 'r', 'q', 'l', 'o', 'i', 't'},
+        {'b', 'l', 'u', 't', 's', 'l', 'z', 'd', 'h', 'f'},
+ 
+    };
+    std::cout << (countWords(words3, 4, grid3, 10, 10) == 4);
+
+	char grid4[100][100] = {
+        {'g', 'o', 'h', 'd', 'n', 'c', 'o'},
+        {'g', 'v', 'w', 'a', 'q', 'a', 'f'},
+        {'f', 'c', 'a', 'r', 'u', 'r', 'h'},
+        {'y', 'c', 'a', 'r', 'p', 'e', 't'},
+        {'e', 'e', 'b', 'f', 'v', 'f', 'y'},
+        {'m', 'l', 'o', 't', 'g', 'h', 'y'},
+        {'e', 'y', 'e', 'b', 'a', 'l', 'l'}
+    };
+ 
+    char words4[50][101] = {"car", "carpet", "care", "eye", "ball", "eyeball"};
+ 
+    std::cout << (countWords(words4, 6, grid4, 7, 7) == 6);
+
 	return 0;
 }
