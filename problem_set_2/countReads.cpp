@@ -3,7 +3,7 @@
 
 using namespace std;
 
-char **getSentenceWords(char sentence[90901], char wordsBuffer[909][101], int &wordCount)
+void getSentenceWords(char sentence[90901], char wordsBuffer[909][101], int &wordCount)
 {
 	int sentenceLength = strlen(sentence);
 	int arrayRow = 0;
